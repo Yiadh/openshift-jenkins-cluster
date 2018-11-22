@@ -47,7 +47,19 @@
 		        "name": "ose-jenkins"
 		    },
 			"spec": {
-				"dockerImageRepository": "registry.access.redhat.com/openshift3/jenkins-1-rhel7"
+				"dockerImageRepository": "registry.access.redhat.com/openshift3/jenkins-1-rhel7",
+"tags": [
+      {
+        "from": {
+          "kind": "DockerImage",
+          "name": "registry.access.redhat.com/openshift3/jenkins-1-rhel7:1.609-15"
+        },
+        "importPolicy": {
+          "insecure": true
+        },
+        "name": "1.609-15"
+      }
+    ]
 			}
 		},
         {
